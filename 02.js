@@ -12,6 +12,18 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  
+  const palabras = strings.join(" ").split(" ");
+  let resultado = "";
+  for(word of palabras) {
+    if (word.length > resultado.length) {
+      resultado=word;
+    }
+  }
+  return resultado
+
+
+
 }
 
 // No modifiques nada debajo de esta linea //

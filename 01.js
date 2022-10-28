@@ -11,10 +11,14 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
-}
-
+  
+   var nuevoArray = [];
+   array.map( val => {
+   if(typeof(val) == "number")
+    nuevoArray.push(val)
+   })
+   return nuevoArray
+  
 // No modifiques nada debajo de esta linea //
-
-
+}
 module.exports = soloNumeros
