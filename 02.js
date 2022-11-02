@@ -13,18 +13,19 @@ function stringMasLarga(strings) {
 
   // Tu código aca
   
-  const palabras = strings.join(" ").split(" ");
-  let resultado = "";
-  for(word of palabras) {
-    if (word.length > resultado.length) {
-      resultado=word;
+  let mayor = strings[0]
+
+  for(i=1; i<strings.length; i++){
+    if(strings[i].length > mayor.length){
+      mayor = strings[i]
     }
   }
-  return resultado
-
-
-
+  return mayor
 }
+
+
+
+
 
 // No modifiques nada debajo de esta linea //
 
